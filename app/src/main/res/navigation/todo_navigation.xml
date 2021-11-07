@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/todo_navigation"
+    app:startDestination="@id/todoFragment">
+
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.flesh.todo.ui.TodoFragment"
+        android:label="TodoFragment"
+        tools:layout="@layout/fragment_todo">
+        <action
+            android:id="@+id/action_dataBindingFragment_to_addItemAlertDialogFragment"
+            app:destination="@id/addItemAlertDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/addItemAlertDialogFragment"
+        android:name="com.flesh.todo.ui.AddItemAlertDialogFragment"
+        android:label="AddItemAlertDialogFragment">
+
+        <argument android:name="item"
+            app:argType="com.flesh.todo.objects.TodoItem"
+            app:nullable="true"/>
+
+    </dialog>
+
+</navigation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- List Dimensions -->
+    <dimen name="list_item_margin">16dp</dimen>
+    <dimen name="list_item_title_end_margin">16dp</dimen>
+
+    <!-- Dialog Dimensions -->
+    <dimen name="dialog_content_margin">16dp</dimen>
+    <dimen name="dialog_button_margin">4dp</dimen>
+
+</resources>
