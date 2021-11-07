@@ -13,7 +13,7 @@ I decided to create a Todo App.
     [x] Remove Task
     [x] Edit Task
     [x] Complete Task
-![](images/add item.png)
-    ![](images/add item.png | width=100)
+
+![](https://github.com/adfleshner/Todo-App/blob/master/images/add%20item.png?raw=true | width=100)
 
 
