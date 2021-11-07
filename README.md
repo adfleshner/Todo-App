@@ -19,17 +19,22 @@ I decided to create a Todo App.
             width:270px;
             height:570px;
             border: solid 1px #CCC"/>
-<img src="https://github.com/adfleshner/Todo-App/blob/master/images/add%20item.png?raw=true"
+<img src="https://github.com/adfleshner/Todo-App/blob/master/images/list%20item.png?raw=true"
 	 style="object-fit:cover;
             width:270px;
             height:570px;
             border: solid 1px #CCC"/>
-<img src="https://github.com/adfleshner/Todo-App/blob/master/images/add%20item.png?raw=true"
+<img src="https://github.com/adfleshner/Todo-App/blob/master/images/list%20item%20completed.png?raw=true"
 	 style="object-fit:cover;
             width:270px;
             height:570px;
             border: solid 1px #CCC"/>
-<img src="https://github.com/adfleshner/Todo-App/blob/master/images/add%20item.png?raw=true"
+<img src="https://github.com/adfleshner/Todo-App/blob/master/images/more%20list%20items.png?raw=true"
+	 style="object-fit:cover;
+            width:270px;
+            height:570px;
+            border: solid 1px #CCC"/>
+<img src="https://github.com/adfleshner/Todo-App/blob/master/images/update%20item.png?raw=true"
 	 style="object-fit:cover;
             width:270px;
             height:570px;
