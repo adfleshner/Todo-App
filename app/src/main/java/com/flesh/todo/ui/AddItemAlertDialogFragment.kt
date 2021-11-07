@@ -39,10 +39,14 @@ class AddItemAlertDialogFragment : DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        //Get EditText
+        val et = view.findViewById<EditText>(R.id.etAddItem)
+        val btnAdd = view.findViewById<Button>(R.id.btnAddItem)
         val item = _navArgs.item
         item?.let {
-            view.findViewById<EditText>(R.id.etAddItem).setText(it.title)
-            view.findViewById<Button>(R.id.btnAddItem).text = view.context.getString(R.string.update)
+            et.setText(it.title)
+            et.setSelection(it.title.length)
+            btnAdd.text = view.context.getString(R.string.update)
         }
 
         view.findViewById<Button>(R.id.btnCancel).setOnClickListener {
@@ -51,11 +55,11 @@ class AddItemAlertDialogFragment : DialogFragment() {
                 dismiss()
             }
         }
-        view.findViewById<Button>(R.id.btnAddItem).setOnClickListener {
+        btnAdd.setOnClickListener {
             viewLifecycleOwner.lifecycleScope.launch {
                 closeKeyboardFirst(view)
                 setFragmentResult(RESULT_KEY, Bundle().apply {
-                    val title = view.findViewById<EditText>(R.id.etAddItem).text.toString()
+                    val title = et.text.toString()
                     val data = if(item==null){
                         TodoItem(title = title)
                     }else{

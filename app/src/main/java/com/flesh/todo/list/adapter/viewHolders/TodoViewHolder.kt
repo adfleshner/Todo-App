@@ -14,12 +14,12 @@ class TodoViewHolder(private val binding : ItemTodoBinding, itemClickListener: T
     : ItemClickViewHolder<TodoItem, TodoViewHolderItemClickListener>(binding.root,itemClickListener){
 
     override fun bind(item: TodoItem){
-        binding.item = item
         super.bind(item)
+        binding.item = item
+        binding.executePendingBindings()
         binding.btnDelete.setOnClickListener {
             clickListener.onDeleteClicked(item)
         }
-        binding.executePendingBindings()
     }
 
 }
