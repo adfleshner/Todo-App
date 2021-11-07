@@ -14,6 +14,9 @@ I decided to create a Todo App.
     [x] Edit Task
     [x] Complete Task
 
-![](https://github.com/adfleshner/Todo-App/blob/master/images/add%20item.png?raw=true)
-
+<img src="https://github.com/adfleshner/Todo-App/blob/master/images/add%20item.png?raw=true"
+	 style="object-fit:cover;
+            width:200px;
+            height:300px;
+            border: solid 1px #CCC"/>
 
