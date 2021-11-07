@@ -16,7 +16,7 @@ I decided to create a Todo App.
 
 <img src="https://github.com/adfleshner/Todo-App/blob/master/images/add%20item.png?raw=true"
 	 style="object-fit:cover;
-            width:200px;
-            height:300px;
+            width:270px;
+            height:570px;
             border: solid 1px #CCC"/>
 
