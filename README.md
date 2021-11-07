@@ -14,4 +14,6 @@ I decided to create a Todo App.
     [x] Edit Task
     [x] Complete Task
 
+    ![](images/add item.png | width=100)
+
 
