@@ -2,7 +2,7 @@
 <resources>
 
     <!-- List Dimensions -->
-    <dimen name="list_item_margin">16dp</dimen>
+    <dimen name="list_item_margin">8dp</dimen>
     <dimen name="list_item_title_end_margin">16dp</dimen>
 
     <!-- Dialog Dimensions -->

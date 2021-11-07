@@ -20,6 +20,7 @@ import com.flesh.todo.objects.TodoItem
 import com.flesh.todo.objects.room.TodoRepository
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import java.lang.IllegalArgumentException
 
 class TodoFragment : DataBindingFragment<FragmentTodoBinding>(), TodoViewHolderItemClickListener {
 
@@ -93,9 +94,11 @@ class TodoFragment : DataBindingFragment<FragmentTodoBinding>(), TodoViewHolderI
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.menu_add -> {
-                val openNewItemDialog = TodoFragmentDirections
-                    .actionDataBindingFragmentToAddItemAlertDialogFragment(null)
-                findNavController().navigate(openNewItemDialog)
+                try {
+                    val openNewItemDialog = TodoFragmentDirections
+                        .actionDataBindingFragmentToAddItemAlertDialogFragment(null)
+                    findNavController().navigate(openNewItemDialog)
+                } catch (ex:IllegalArgumentException){ }
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -112,8 +115,10 @@ class TodoFragment : DataBindingFragment<FragmentTodoBinding>(), TodoViewHolderI
     }
 
     override fun onItemLongClick(item: TodoItem) {
-        val openUpdateItemDialog = TodoFragmentDirections
-            .actionDataBindingFragmentToAddItemAlertDialogFragment(item)
-        findNavController().navigate(openUpdateItemDialog)
+        try{
+            val openUpdateItemDialog = TodoFragmentDirections
+                .actionDataBindingFragmentToAddItemAlertDialogFragment(item)
+            findNavController().navigate(openUpdateItemDialog)
+        } catch (ex:IllegalArgumentException){ }
     }
 }
